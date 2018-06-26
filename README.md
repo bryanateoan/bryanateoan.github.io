@@ -1,1 +1,1 @@
-<H1 align="center">:construction: Under Construction :construction: </H1>
+<H1 align="center">Under Construction</H1>
