@@ -2,17 +2,20 @@ body {
     background-color: #fff;
 }
 
+section {
+    height: 100vh;
+}
+
+/* ids*/
 #header {
     text-align: center;
     padding: 14rem 0;
-    width: 100%;
-    height: 100%;
-    background-size:cover;
 }
 
 #header-title {
     font-family: 'Roboto Slab';
     letter-spacing: 2px;
+    padding:1px;
 }
 
 #bio-container {
@@ -39,10 +42,7 @@ body {
 #education-content {
 
 }
-
-.section {
-}
-
+/*classes*/
 .round-logo{
 	display: inline-block;
 	vertical-align: middle;
