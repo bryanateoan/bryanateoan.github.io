@@ -14,7 +14,7 @@ section:nth-child(2n) {
     background-color: #333;
 }
 
-section:nth-child(2n) h1 {
+section:nth-child(2n) h1, section:nth-child(2n) .section-text {
     color: #fff;
 }
 
@@ -60,7 +60,10 @@ section:nth-child(2n) h1 {
 }
 
 #education-content {
+}
 
+#education-stats {
+    text-align: center;
 }
 /*classes*/
 .round-logo{
