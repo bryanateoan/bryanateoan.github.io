@@ -1,9 +1,30 @@
+a, a:hover, a:visited {
+    text-decoration: none;
+}
+
 body {
     background-color: #fff;
 }
 
 section {
     height: 100vh;
+}
+
+section:nth-child(2n) {
+    background-color: #333;
+}
+
+section:nth-child(2n) h1 {
+    color: #fff;
+}
+
+/* override */
+.fa-github {
+    color: #333;
+}
+
+.fa-linkedin {
+    color:#0976b4
 }
 
 /* ids*/
@@ -15,11 +36,10 @@ section {
 #header-title {
     font-family: 'Roboto Slab';
     letter-spacing: 2px;
-    padding:1px;
 }
 
 #bio-container {
-    background-color: #222;
+
 }
 
 #bio-paragraph {
@@ -28,11 +48,11 @@ section {
 }
 
 #project-container {
-
+    align: center;
 }
 
 #project-content {
-
+    
 }
 
 #education-container {
@@ -47,33 +67,45 @@ section {
 	display: inline-block;
 	vertical-align: middle;
 	text-align: center;
-	color: #222;
-	background: #fff;
-	margin: 0 20px 0 20px;
+    margin: 0 20px 0 20px;
+    opacity: 0.5;
     padding: 5px;
     font-size: 5em;
-    transition: background-color 0.25s, color 0.25s;
+    transition: opacity 0.75s;
     transition-timing-function: ease-out;
 }
 .round-logo:hover {
-	background-color: #fff;
-	color: rebeccapurple;
     text-align: center;
+    opacity: 1;
 }
 
-.flip-container {
+.section-title {
+    font-family: 'Roboto Slab';
+    letter-spacing: 2px;
+    text-align: center;
+    padding: 3px;
+}
+
+.section-content {
 
 }
 
-.flip-content {
-
+.project-card-container {
+    text-align: center;
+    height: 50vh;
+    background-color:red;
+    outline: 1px solid black;
+    
 }
 
-.card-front{
-
+.project-card {
+    height: 25vh;
+    background-color: blue;
+    outline: 1px solid white;
+    color:white;
 }
 
-.card-back {
-
+.background-red {
+    background: red;
 }
 
