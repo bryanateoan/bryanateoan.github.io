@@ -1,21 +1,9 @@
 a, a:hover, a:visited {
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 body {
     background-color: #fff;
-}
-
-section {
-    height: 100vh;
-}
-
-section:nth-child(2n) {
-    background-color: #333;
-}
-
-section:nth-child(2n) h1, section:nth-child(2n) .section-text {
-    color: #fff;
 }
 
 /* override */
@@ -27,45 +15,51 @@ section:nth-child(2n) h1, section:nth-child(2n) .section-text {
     color:#0976b4
 }
 
+
 /* ids*/
 #header {
     text-align: center;
-    padding: 14rem 0;
+    height: 35vh;
+    margin-bottom: 20px;
+    
 }
 
 #header-title {
     font-family: 'Roboto Slab';
+    letter-spacing: 3px;
+}
+
+#header-sub {
+    max-width: 500px;
     letter-spacing: 2px;
+    font-size: 1.25em;
+    padding:5px;
+    margin: auto;
 }
 
-#bio-container {
-
+#left {
+    float:left; 
+    margin-right:20px;
+    padding:10px;
+    width:50%;
+    border-right:2px solid gray;
+}
+#right {
+    padding:10px;
+    min-height:170px;
 }
 
-#bio-paragraph {
-    color: #fff;
-    padding: 10px;
-}
+@media screen and (max-width: 500px) {
+    #left { 
+        float: none;
+        margin-right:0;
+        width:auto;
+        border:0;
+        border-bottom:2px solid #000;    
+    }
+ }
 
-#project-container {
-    align: center;
-}
-
-#project-content {
-    
-}
-
-#education-container {
-
-}
-
-#education-content {
-}
-
-#education-stats {
-    text-align: center;
-}
-/*classes*/
+/*class*/
 .round-logo{
 	display: inline-block;
 	vertical-align: middle;
@@ -73,42 +67,12 @@ section:nth-child(2n) h1, section:nth-child(2n) .section-text {
     margin: 0 20px 0 20px;
     opacity: 0.5;
     padding: 5px;
-    font-size: 5em;
+    font-size: 4em;
     transition: opacity 0.75s;
     transition-timing-function: ease-out;
 }
 .round-logo:hover {
     text-align: center;
     opacity: 1;
-}
-
-.section-title {
-    font-family: 'Roboto Slab';
-    letter-spacing: 2px;
-    text-align: center;
-    padding: 3px;
-}
-
-.section-content {
-
-}
-
-.project-card-container {
-    text-align: center;
-    height: 50vh;
-    background-color:red;
-    outline: 1px solid black;
-    
-}
-
-.project-card {
-    height: 25vh;
-    background-color: blue;
-    outline: 1px solid white;
-    color:white;
-}
-
-.background-red {
-    background: red;
 }
 
